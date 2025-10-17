@@ -6,6 +6,15 @@ Until then, breaking changes can happen in minor versions.
 
 
 
+## 0.2
+
+### 💡 Adjustments
+
+* The package now uses Swift 6.1. 
+* The demo app now targets iOS 26.
+
+
+
 ## 0.1.4
 
 ### 💡 Adjustments

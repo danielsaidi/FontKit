@@ -15,6 +15,25 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
+                Section("Font Size") {
+                    Picker(
+                        "Demo Font Size",
+                        selection: $typeSize
+                    ) {
+                        pickerItem("X Small", .xSmall)
+                        pickerItem("Small", .small)
+                        pickerItem("Medium", .medium)
+                        pickerItem("Large", .large)
+                        pickerItem("X Large", .xLarge)
+                        pickerItem("XX Large", .xxLarge)
+                        pickerItem("XXX Large", .xxxLarge)
+                        pickerItem("Accessibility 1", .accessibility1)
+                        pickerItem("Accessibility 2", .accessibility2)
+                        pickerItem("Accessibility 3", .accessibility3)
+                        pickerItem("Accessibility 4", .accessibility4)
+                        pickerItem("Accessibility 5", .accessibility5)
+                    }
+                }
                 Section("Dynamic Size") {
                     ForEach(CustomFont.openDyslexicFonts) {
                         Text($0.name)
@@ -35,19 +54,7 @@ struct ContentView: View {
                 }
             }
             .dynamicTypeSize(typeSize)
-            .navigationTitle("FontKit")
-            .toolbar {
-                ToolbarItem(placement: .automatic) {
-                    Picker(
-                        "Dynamic Size",
-                        selection: $typeSize
-                    ) {
-                        pickerItem("X Small", .xSmall)
-                        pickerItem("Medium", .medium)
-                        pickerItem("XXX Large", .xxxLarge)
-                    }
-                }
-            }
+            .navigationTitle("FontKit Demo")
         }
     }
 }
