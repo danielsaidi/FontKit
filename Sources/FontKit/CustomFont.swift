@@ -8,16 +8,15 @@
 
 import SwiftUI
 
-/// This struct can be used to load custom fonts from an app
-/// or Swift Package.
+/// This struct can be used to load custom fonts from an app or Swift Package.
 ///
-/// This font type implements ``CustomFontRepresentable`` to
-/// share custom font logic between many font-specific types.
+/// This struct implements ``CustomFontRepresentable`` to share custom
+/// font logic between many font-specific types.
 ///
-/// The static ``font(size:)`` builder can be used to create
-/// platform-specific fonts, while ``swiftUIFont(fixedSize:)``
-/// and the other SwiftUI-specific extensions can be used to
-/// create SwiftUI `Font` values.
+/// The static ``font(size:)`` builder can be used to create platform-specific
+/// font values with the ``FontRepresentable`` umbrella typealias, while the
+/// ``swiftUIFont(fixedSize:)`` and the other SwiftUI-specific extensions
+/// can be used to create SwiftUI `Font` values.
 public struct CustomFont: CustomFontRepresentable, Identifiable, Sendable {
 
     /// Create a custom font from a file folder.
