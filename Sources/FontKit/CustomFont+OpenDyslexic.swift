@@ -3,6 +3,7 @@
 //  FontKit
 //
 //  Created by Daniel Saidi on 2025-07-07.
+//  Copyright © 2022-2026 Daniel Saidi. All rights reserved.
 //
 //  Courtesy by OpenDyslexic.org
 //  Please consider donating at https://opendyslexic.org
